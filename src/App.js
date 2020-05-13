@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from './components/layout/Navbar';
+import UserItem from './components/users/UserItem';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <Navbar
-      // title='Find a Github!' icon='fab fa-github'
-      />
+      <Navbar />
+      <UserItem />
     </div>
   );
 }
