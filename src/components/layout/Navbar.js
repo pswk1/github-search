@@ -1,30 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-class Navbar extends Component {
-  // default props to exist
-  // However, if props are actually passed in, the default props will be overwritten
-  static defaultProps = {
-    title: 'Find a Github!',
-    icon: 'fab fa-github',
-  };
+const Navbar = ({ icon, title }) => {
+  return (
+    <nav className='navbar bg-dark'>
+      <h1>
+        <i className={icon} />
+        {title}
+      </h1>
+    </nav>
+  );
+};
 
-  // Checks the type of the prop. In this case, whatever prop that is passed in must be a string.
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
-  };
+// default props to exist
+// However, if props are actually passed in, the default props will be overwritten
+Navbar.defaultProps = {
+  title: 'Find a Github!',
+  icon: 'fab fa-github',
+};
 
-  render() {
-    return (
-      <nav className='navbar bg-dark'>
-        <h1>
-          <i className={this.props.icon} />
-          {this.props.title}
-        </h1>
-      </nav>
-    );
-  }
-}
+// Checks the type of the prop. In this case, whatever prop that is passed in must be a string.
+Navbar.propTypes = {
+  title: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+};
 
 export default Navbar;
