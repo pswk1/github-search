@@ -15,7 +15,7 @@ const Navbar = ({ icon, title }) => {
 // default props to exist
 // However, if props are actually passed in, the default props will be overwritten
 Navbar.defaultProps = {
-  title: 'Find a Github!',
+  title: `What's Your Github?`,
   icon: 'fab fa-github',
 };
 
