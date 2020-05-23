@@ -6,7 +6,7 @@ const Navbar = ({ icon, title }) => {
     <nav className='navbar bg-dark'>
       <h1>
         <i className={icon} />
-        {title}
+        <span style={{ paddingLeft: '.5em' }}>{title}</span>
       </h1>
     </nav>
   );
