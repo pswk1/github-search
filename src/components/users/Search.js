@@ -7,6 +7,8 @@ class Search extends Component {
   };
   static propTypes = {
     searchUsers: PropTypes.func.isRequired,
+    clearUsers: PropTypes.func.isRequired,
+    showClear: PropTypes.bool.isRequired,
   };
   // this.setState({ text: e.target.value });
   // This will require us to look for every property of input and to change it if we want
@@ -21,6 +23,7 @@ class Search extends Component {
   };
 
   render() {
+    const { showClear, clearUsers } = this.props;
     return (
       <div>
         <form onSubmit={this.onSubmit} className='form'>
@@ -37,6 +40,16 @@ class Search extends Component {
             className='btn btn-dark btn-block'
           />
         </form>
+
+        {showClear && (
+          <button
+            style={{ marginTop: '.5rem', borderRadius: '1rem' }}
+            className='btn btn-light btn-danger btn-block'
+            onClick={clearUsers}
+          >
+            Clear
+          </button>
+        )}
       </div>
     );
   }
