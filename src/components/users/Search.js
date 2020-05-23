@@ -9,6 +9,7 @@ class Search extends Component {
     searchUsers: PropTypes.func.isRequired,
     clearUsers: PropTypes.func.isRequired,
     showClear: PropTypes.bool.isRequired,
+    setAlert: PropTypes.func.isRequired,
   };
   // this.setState({ text: e.target.value });
   // This will require us to look for every property of input and to change it if we want
@@ -18,8 +19,12 @@ class Search extends Component {
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
   onSubmit = (e) => {
     e.preventDefault();
-    this.props.searchUsers(this.state.text);
-    this.setState({ text: '' });
+    if (this.state.text === '') {
+      this.props.setAlert('Please enter a username.', 'danger');
+    } else {
+      this.props.searchUsers(this.state.text);
+      this.setState({ text: '' });
+    }
   };
 
   render() {

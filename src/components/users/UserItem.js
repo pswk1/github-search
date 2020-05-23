@@ -15,10 +15,10 @@ const UserItem = ({ user: { login, avatar_url, html_url } }) => {
         <a
           href={html_url}
           className='btn btn-dark btn-sm my-1'
-          target='_blank'
-          rel='noopener noreferrer'
+          // target='_blank'
+          // rel='noopener noreferrer'
         >
-          Github Profile
+          More Info
         </a>
       </div>
     </div>
