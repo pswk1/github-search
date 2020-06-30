@@ -29,19 +29,25 @@ This application is created with React components and makes a call to the Github
 git clone git@github.com:pswk1/github-search.git
 ```
 
-2. Install necessary dependencies
+2. Navigate to the correct directory
+
+```
+cd github-search
+```
+
+3. Install necessary dependencies
 
 ```
 npm install
 ```
 
-3. To start the script and run the application on a local server, run npm start.
+4. To start the script and run the application on a local server, run npm start.
 
 ```
 npm start
 ```
 
-4. Search for Github users by name or username! Thank you for visiting this project.
+5. Search for Github users by name or username! Thank you for visiting this project.
 
 ## Contributors
 
