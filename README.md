@@ -49,6 +49,10 @@ npm start
 
 5. Search for Github users by name or username! Thank you for visiting this project.
 
+## Demo
+
+<img src='/gif/Github Finder.gif'>
+
 ## Contributors
 
 Developed by Peter Kang as part of the React Front to Back course by Brad Traversy.
