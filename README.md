@@ -4,6 +4,10 @@
 
 This application is created with React components and makes a call to the Github API to search its users. It utilizes functional components with hooks and the Context API.
 
+## Contributors
+
+Developed by Peter Kang as part of the React Front to Back course by Brad Traversy.
+
 ## Application
 
 [Link to application](https://pk-github-search.netlify.app/)
@@ -52,7 +56,3 @@ npm start
 ## Demo
 
 <img src='/gif/Github Finder.gif'>
-
-## Contributors
-
-Developed by Peter Kang as part of the React Front to Back course by Brad Traversy.
